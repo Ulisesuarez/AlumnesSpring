@@ -10,6 +10,9 @@ public class ServeiAlumnat {
 	
 	@Autowired
 	private RepositoriAlumnesMemoria repoAlumnes;
+	public RepositoriAlumnesMemoria getRepoAlumnes() {
+		return repoAlumnes;
+	}
 	@PostConstruct
 	public void init() {
 		matricula(1, "Antonia");
@@ -22,5 +25,6 @@ public class ServeiAlumnat {
 		repoAlumnes.altaAlumne(id, alumne);
 		return true;
 	}
+	
 	
 }
