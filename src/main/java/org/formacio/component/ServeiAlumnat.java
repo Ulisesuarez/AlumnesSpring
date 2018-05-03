@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 public class ServeiAlumnat {
 	
 	@Autowired
-	private RepositoriAlumnesMemoria repoAlumnes;
-	public RepositoriAlumnesMemoria getRepoAlumnes() {
+	private RepositoriAlumnes repoAlumnes;
+	public RepositoriAlumnes getRepoAlumnes() {
 		return repoAlumnes;
 	}
 	@PostConstruct
