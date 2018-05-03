@@ -15,8 +15,12 @@ public class ServeiAlumnat {
 	}
 	@PostConstruct
 	public void init() {
+		this.inicializarRepoAlumnos();
+	}
+	private void inicializarRepoAlumnos() {
 		matricula(1, "Antonia");
 		matricula(2, "Joan");
+		
 	}
 	public boolean matricula (int id, String alumne) {
 		if(alumne == null) {
